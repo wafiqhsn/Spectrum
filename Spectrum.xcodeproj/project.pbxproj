@@ -1,0 +1,37 @@
+// !$*UTF8*$!
+{ archiveVersion = 1; classes = {}; objectVersion = 56; objects = {
+000000000000000000000073 = { isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lyrics.swift; sourceTree = "<group>"; };
+00000000000000000000013B = { isa = PBXBuildFile; fileRef = 000000000000000000000073; };
+000000000000000000000072 = { isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotifyPlayer.swift; sourceTree = "<group>"; };
+00000000000000000000013A = { isa = PBXBuildFile; fileRef = 000000000000000000000072; };
+000000000000000000000070 = { isa = PBXFileReference; lastKnownFileType = image.icns; path = Resources/SpectrumIcon.icns; sourceTree = "<group>"; };
+000000000000000000000138 = { isa = PBXBuildFile; fileRef = 000000000000000000000070; };
+000000000000000000000071 = { isa = PBXFileReference; lastKnownFileType = image.png; path = Resources/SpectrumIcon.png; sourceTree = "<group>"; };
+000000000000000000000139 = { isa = PBXBuildFile; fileRef = 000000000000000000000071; };
+
+000000000000000000000064 = { isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpectrumApp.swift; sourceTree = "<group>"; };
+0000000000000000000000C8 = { isa = PBXBuildFile; fileRef = 000000000000000000000064; };
+000000000000000000000065 = { isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpectrumModel.swift; sourceTree = "<group>"; };
+0000000000000000000000C9 = { isa = PBXBuildFile; fileRef = 000000000000000000000065; };
+000000000000000000000066 = { isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioCapture.swift; sourceTree = "<group>"; };
+0000000000000000000000CA = { isa = PBXBuildFile; fileRef = 000000000000000000000066; };
+000000000000000000000067 = { isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpectrumFFT.swift; sourceTree = "<group>"; };
+0000000000000000000000CB = { isa = PBXBuildFile; fileRef = 000000000000000000000067; };
+00000000000000000000006E = { isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+00000000000000000000006F = { isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+000000000000000000000078 = { isa = PBXFileReference; explicitFileType = wrapper.application; path = Spectrum.app; sourceTree = BUILT_PRODUCTS_DIR; };
+000000000000000000000001 = { isa = PBXProject; attributes = { LastUpgradeCheck = 1600; }; buildConfigurationList = 00000000000000000000000A; compatibilityVersion = "Xcode 14.0"; developmentRegion = en; knownRegions = (en, Base); mainGroup = 000000000000000000000002; productRefGroup = 000000000000000000000004; projectDirPath = ""; projectRoot = ""; targets = (000000000000000000000005); };
+000000000000000000000002 = { isa = PBXGroup; children = (000000000000000000000003, 00000000000000000000006F, 000000000000000000000004); sourceTree = "<group>"; };
+000000000000000000000003 = { isa = PBXGroup; children = (000000000000000000000064, 000000000000000000000065, 000000000000000000000066, 000000000000000000000067, 000000000000000000000072, 000000000000000000000073, 00000000000000000000006E, 000000000000000000000070, 000000000000000000000071); path = Spectrum; sourceTree = "<group>"; };
+000000000000000000000004 = { isa = PBXGroup; children = (000000000000000000000078); name = Products; sourceTree = "<group>"; };
+000000000000000000000005 = { isa = PBXNativeTarget; buildConfigurationList = 00000000000000000000000B; buildPhases = (000000000000000000000006, 000000000000000000000007, 000000000000000000000008); buildRules = (); dependencies = (); name = Spectrum; productName = Spectrum; productReference = 000000000000000000000078; productType = "com.apple.product-type.application"; };
+000000000000000000000006 = { isa = PBXSourcesBuildPhase; buildActionMask = 2147483647; files = (0000000000000000000000C8, 0000000000000000000000C9, 0000000000000000000000CA, 0000000000000000000000CB, 00000000000000000000013A, 00000000000000000000013B); runOnlyForDeploymentPostprocessing = 0; };
+000000000000000000000007 = { isa = PBXFrameworksBuildPhase; buildActionMask = 2147483647; files = (); runOnlyForDeploymentPostprocessing = 0; };
+000000000000000000000008 = { isa = PBXResourcesBuildPhase; buildActionMask = 2147483647; files = (000000000000000000000138, 000000000000000000000139); runOnlyForDeploymentPostprocessing = 0; };
+00000000000000000000000A = { isa = XCConfigurationList; buildConfigurations = (000000000000000000000014, 000000000000000000000015); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
+00000000000000000000000B = { isa = XCConfigurationList; buildConfigurations = (000000000000000000000016, 000000000000000000000017); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
+000000000000000000000014 = { isa = XCBuildConfiguration; buildSettings = { MACOSX_DEPLOYMENT_TARGET = 14.2; SDKROOT = macosx; SWIFT_VERSION = 5.0; CLANG_ENABLE_MODULES = YES; }; name = Debug; };
+000000000000000000000015 = { isa = XCBuildConfiguration; buildSettings = { MACOSX_DEPLOYMENT_TARGET = 14.2; SDKROOT = macosx; SWIFT_VERSION = 5.0; CLANG_ENABLE_MODULES = YES; }; name = Release; };
+000000000000000000000016 = { isa = XCBuildConfiguration; buildSettings = { PRODUCT_NAME = Spectrum; PRODUCT_BUNDLE_IDENTIFIER = dev.local.SpotifySpectrum; INFOPLIST_FILE = Spectrum/Info.plist; GENERATE_INFOPLIST_FILE = NO; CODE_SIGN_STYLE = Automatic; CODE_SIGN_IDENTITY = "-"; ENABLE_APP_SANDBOX = NO; SWIFT_OPTIMIZATION_LEVEL = "-Onone"; LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks"; }; name = Debug; };
+000000000000000000000017 = { isa = XCBuildConfiguration; buildSettings = { PRODUCT_NAME = Spectrum; PRODUCT_BUNDLE_IDENTIFIER = dev.local.SpotifySpectrum; INFOPLIST_FILE = Spectrum/Info.plist; GENERATE_INFOPLIST_FILE = NO; CODE_SIGN_STYLE = Automatic; CODE_SIGN_IDENTITY = "-"; ENABLE_APP_SANDBOX = NO; SWIFT_OPTIMIZATION_LEVEL = "-O"; LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks"; }; name = Release; };
+}; rootObject = 000000000000000000000001; }
